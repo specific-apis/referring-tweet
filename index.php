@@ -1,5 +1,6 @@
 <?php
 header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
 $url = 'https://mobile.twitter.com/search?q=' . str_replace("?amp=1","",$_GET["url"]);
 
 $ch = curl_init();
