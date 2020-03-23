@@ -16,8 +16,9 @@
   </head>
 <body>
 
-  <script src="https://platform.twitter.com/widgets.js"></script>
+  <script src="//platform.twitter.com/widgets.js"></script>
   <div id="container"></div>
+  <div id="referrer"></div>
 
   <script>
 
@@ -36,6 +37,8 @@
   };
   xhttp.open("GET", "index.php?url=" + document.referrer, true);
   xhttp.send();
+
+  document.getElementById("referrer").innerHTML = document.referrer;
 
   </script>
 
